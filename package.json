@@ -1,0 +1,46 @@
+{
+  "name": "flickr-to-jekyll",
+  "version": "1.0.0",
+  "description": "🖼 Save the Flickr photos in your Jekyll posts",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/katydecorah/flickr-to-jekyll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katydecorah/flickr-to-jekyll/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "precommit": "lint-staged",
+    "test": "tape test/*.js"
+  },
+  "author": "Katy DeCorah",
+  "license": "MIT",
+  "dependencies": {
+    "d3-queue": "^3.0.7",
+    "flickrapi": "^0.6.0",
+    "request": "^2.87.0"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint",
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "bin": {
+    "flickr-to-jekyll": "./bin/flickr-to-jekyll.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.4",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7",
+    "prettier": "^1.13.5",
+    "tape": "^4.9.1"
+  }
+}
