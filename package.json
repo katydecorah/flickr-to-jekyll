@@ -20,7 +20,7 @@
   "dependencies": {
     "d3-queue": "^3.0.7",
     "flickrapi": "^0.6.0",
-    "request": "^2.87.0"
+    "request": "^2.88.0"
   },
   "lint-staged": {
     "**/*.js": [
@@ -33,14 +33,18 @@
     "flickr-to-jekyll": "./bin/flickr-to-jekyll.js"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.4",
-    "dotenv": "^5.0.1",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.19.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
+    "lint-staged": "^7.3.0",
     "minimist": "^1.2.0",
     "path": "^0.12.7",
-    "prettier": "^1.13.5",
+    "prettier": "^1.14.3",
     "tape": "^4.9.1"
+  },
+  "homepage": "https://github.com/katydecorah/flickr-to-jekyll#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
   }
 }
